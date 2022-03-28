@@ -127,7 +127,7 @@
                   />
                 </svg>
               </figure>
-              <p class="p-leads">HTML/CSS/JS</p>
+              <p class="p-lead">HTML/CSS/JS</p>
               <p class="proof">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
                 odit!
@@ -181,65 +181,78 @@
       </section>
     </header>
     <main>
-      <section class="portfolio-section">
-        <h3>Mine projekter</h3>
-        <article class="projekter">
-          <a href="#"><img src="billeder/bogino-grid.jpg" alt="Bogino" /></a>
-          <a href="#"
-            ><img src="billeder/cosmic-font-grid.jpg" alt="Bogino"
-          /></a>
-          <a href="#"><img src="billeder/musikloftet.jpg" alt="Bogino" /></a>
-          <a href="#"
-            ><img src="billeder/ungdomsby-midlertidig.jpg" alt="Bogino"
-          /></a>
-          <a href="#"><img src="billeder/spil.jpg" alt="Bogino" /></a>
-          <a href="#"><img src="billeder/grob.jpg" alt="Bogino" /></a>
-        </article>
-      </section>
-      <section class="om">
-        <article>
-          <h3>Lidt om mig</h3>
-          <p class="p-lead">Kasper Nikolajsen Dahl</p>
-        </article>
-        <article>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi autem
-            odio mollitia minus culpa quaerat ipsa alias fugit facere possimus?
-          </p>
-          <figure><img src="billeder/mig-wet.jpg" alt="" /></figure>
-          <button>LÆS MERE</button>
-        </article>
-      </section>
-      <section class="kontakt">
-        <h3>Skriv til mig...</h3>
-        <p class="p-lead">Jeg er kun en besked væk</p>
-        <form name="contact" method="POST" data-netlify="true">
-          <p class="form-p">Navn</p>
-          <p>
-            <label><input type="text" name="name" placeholder="Navn" /></label>
-          </p>
-          <p class="form-p">Email</p>
-          <p>
-            <label
-              ><input type="email" name="email" placeholder="Email"
-            /></label>
-          </p>
-          <p class="form-p">Emne</p>
-          <p>
-            <label
-              ><input type="text" name="subject" placeholder="Emne"
-            /></label>
-          </p>
-          <p class="form-p">Besked</p>
-          <p>
-            <label>
-              <textarea name="message" placeholder="Besked"></textarea>
-            </label>
-          </p>
-          <p>
-            <button type="submit">SEND</button>
-          </p>
-        </form>
+      <section class="wrapper">
+        <section class="portfolio-section">
+          <h3>Mine projekter</h3>
+          <article class="projekter">
+            <a href="#"><img src="billeder/bogino-grid.jpg" alt="Bogino" /></a>
+            <a href="#"
+              ><img src="billeder/cosmic-font-grid.jpg" alt="Bogino"
+            /></a>
+            <a href="#"><img src="billeder/musikloftet.jpg" alt="Bogino" /></a>
+            <a href="#"
+              ><img src="billeder/ungdomsby-midlertidig.jpg" alt="Bogino"
+            /></a>
+            <a href="#"><img src="billeder/spil.jpg" alt="Bogino" /></a>
+            <a href="#"><img src="billeder/grob.jpg" alt="Bogino" /></a>
+          </article>
+        </section>
+        <section class="om">
+          <article>
+            <h3>Lidt om mig</h3>
+            <p class="p-lead">Kasper Nikolajsen Dahl</p>
+          </article>
+          <article class="om-mig">
+            <article>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+                et maiores ex atque minima reprehenderit consectetur? Delectus
+                dignissimos exercitationem magni! In, reprehenderit esse aut
+                consequuntur earum veniam aperiam fugit nisi, vero iste
+                distinctio? Culpa, eos sapiente consectetur corrupti, aperiam
+                quidem accusamus nihil, veritatis quis nam libero dignissimos
+                porro ipsam deserunt!
+              </p>
+              <button class="desktop-btn">LÆS MERE</button>
+            </article>
+
+            <figure><img src="billeder/mig-wet.jpg" alt="" /></figure>
+            <button class="mobile-btn">LÆS MERE</button>
+          </article>
+        </section>
+        <section class="kontakt">
+          <h3>Skriv til mig...</h3>
+          <p class="p-lead">Jeg er kun en besked væk</p>
+          <form name="contact" method="POST" data-netlify="true">
+            <p class="form-p">Navn</p>
+            <p>
+              <label
+                ><input type="text" name="name" placeholder="Navn"
+              /></label>
+            </p>
+            <p class="form-p">Email</p>
+            <p>
+              <label
+                ><input type="email" name="email" placeholder="Email"
+              /></label>
+            </p>
+            <p class="form-p">Emne</p>
+            <p>
+              <label
+                ><input type="text" name="subject" placeholder="Emne"
+              /></label>
+            </p>
+            <p class="form-p">Besked</p>
+            <p>
+              <label>
+                <textarea name="message" placeholder="Besked"></textarea>
+              </label>
+            </p>
+            <p>
+              <button type="submit">SEND</button>
+            </p>
+          </form>
+        </section>
       </section>
     </main>
     <footer></footer>
