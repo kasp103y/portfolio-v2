@@ -62,11 +62,15 @@
   --spacing-32: 16rem;
   --spacing-64: 32rem;
   /*Easeing*/
-  --easing: 250ms ease;
+  --easing: 250ms ease-out;
 }
 
 html {
   font-family: "inter", sans-serif;
+}
+
+body {
+  transition: var(--easing);
 }
 
 main {
@@ -102,7 +106,9 @@ h1,
   font-size: var(--font-size-xxl);
   font-weight: var(--heavy);
   color: var(--white);
-  text-shadow: var(--text-outline);
+  /* text-shadow: var(--text-outline); */
+  -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
 
   letter-spacing: 2px;
 }
@@ -135,7 +141,7 @@ video {
   width: 100%;
 }
 
-/* video {
+video {
   position: relative;
   height: 100%;
   width: 100%;
@@ -146,7 +152,7 @@ video {
   object-fit: cover;
   display: block;
 }
- */
+
 img {
   border-radius: var(--radius-rounded);
   border: var(--border-thin);
@@ -159,6 +165,7 @@ nav {
   padding: 0 var(--spacing-2);
   position: fixed;
   min-width: 100vw;
+  z-index: 1000;
 }
 
 nav ul {
@@ -312,6 +319,37 @@ input {
     display: grid;
     grid-template-columns: 20% 1fr 20%;
   }
+
+  .red {
+    background-color: #e2000c;
+    color: var(--white);
+  }
+
+  .purple {
+    background-color: #8e3aea;
+    color: var(--yellow);
+  }
+
+  .greenub {
+    background-color: #325b5d;
+
+    color: var(--white);
+  }
+
+  .greengrob {
+    background-color: #22b694;
+
+    color: var(--white);
+  }
+
+  .greenspil {
+    background-color: #6bd662;
+  }
+
+  .darkpurple {
+    background-color: #280f24;
+    color: var(--yellow);
+  }
   .wrapper {
     grid-column-start: 2;
   }
@@ -388,6 +426,43 @@ input {
 
   .mobile-btn {
     display: none;
+  }
+
+  .projekter img {
+    filter: brightness(0.7);
+    transition: var(--easing);
+  }
+
+  .projekter img:hover {
+    filter: brightness(1);
+    transform: scale(1.01);
+  }
+
+  textarea,
+  input {
+    width: 100%;
+    background-color: var(--blue);
+    border-radius: var(--radius-rounded);
+    border: var(--border-thin);
+    font-family: "inter", sans-serif;
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-1);
+  }
+
+  form-p {
+    margin: var(--spacing-1) 0;
+  }
+
+  input {
+    height: 4rem;
+  }
+
+  #besked {
+    height: 10rem;
+  }
+
+  #navne {
+    display: flex;
   }
 }
 @keyframes hop {
