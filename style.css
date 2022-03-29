@@ -84,7 +84,7 @@ main {
   margin: 0 var(--spacing-1);
 }
 
-main > * {
+.section {
   margin: var(--spacing-16) 0;
 }
 
@@ -139,7 +139,7 @@ h3 {
 
 .p-lead {
   font-size: var(--font-size-base);
-  font-weight: var(--medium);
+  font-weight: var(--xmedium);
 }
 
 .heading-lead {
@@ -282,6 +282,10 @@ button:active {
   flex-direction: column;
 }
 
+.card .p-lead {
+  align-self: center;
+}
+
 .card figure {
   background-color: var(--white);
   border-radius: var(--radius-rounded-lg);
@@ -310,11 +314,14 @@ button:active {
 
 .projekter img {
   object-fit: cover;
+  width: 15rem;
+  height: 15rem;
+  aspect-ratio: 1/1;
 }
 
 textarea,
 input {
-  width: 90%;
+  width: 100%;
   border: none;
   border-radius: var(--radius-rounded);
 
@@ -368,7 +375,7 @@ a .svg:hover {
 @media screen and (min-width: 800px) {
   main {
     display: grid;
-    grid-template-columns: 20% 1fr 20%;
+    grid-template-columns: 10% 1fr 10%;
   }
 
   .right h3 {
@@ -443,34 +450,6 @@ a .svg:hover {
     justify-self: start;
   }
 
-  .cards {
-    gap: var(--spacing-4);
-    justify-content: center;
-  }
-
-  .proof {
-    display: block;
-  }
-
-  .card {
-    border-radius: var(--radius-rounded-lg);
-    width: 350px;
-    height: 200px;
-    border: var(--border-thin);
-    display: grid;
-    padding: var(--spacing-1);
-  }
-
-  .card-1 {
-    background-color: var(--purple);
-  }
-  .card-2 {
-    background-color: var(--green);
-  }
-  .card-3 {
-    background-color: var(--blue);
-  }
-
   .projekter {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -533,6 +512,45 @@ a .svg:hover {
 
   #navne {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+  }
+  .cards {
+    gap: var(--spacing-4);
+    justify-content: center;
+    flex-flow: wrap;
+  }
+
+  .proof {
+    display: block;
+  }
+
+  .card {
+    border-radius: var(--radius-rounded-lg);
+    width: 350px;
+    height: 200px;
+    border: var(--border-thin);
+    display: grid;
+    padding: var(--spacing-1);
+  }
+
+  .card .p-lead {
+    align-self: auto;
+  }
+
+  .card-1 {
+    background-color: var(--purple);
+  }
+  .card-2 {
+    background-color: var(--green);
+  }
+  .card-3 {
+    background-color: var(--blue);
   }
 }
 @keyframes hop {

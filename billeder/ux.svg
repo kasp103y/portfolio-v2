@@ -1,13 +1,5 @@
-<svg width="91" height="92" viewBox="0 0 91 92" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="91" height="92" rx="30" fill="white"/>
-<rect x="20" y="30" width="23" height="23" rx="4" stroke="black" stroke-width="2"/>
-<rect x="20" y="20" width="51" height="6" rx="3" stroke="black" stroke-width="2"/>
-<rect x="48" y="30" width="23" height="42" rx="4" stroke="black" stroke-width="2"/>
-<line x1="21" y1="58" x2="42" y2="58" stroke="black" stroke-width="2" stroke-linecap="round"/>
-<line x1="21" y1="62" x2="42" y2="62" stroke="black" stroke-width="2" stroke-linecap="round"/>
-<line x1="21" y1="66" x2="42" y2="66" stroke="black" stroke-width="2" stroke-linecap="round"/>
-<line x1="21" y1="70" x2="42" y2="70" stroke="black" stroke-width="2" stroke-linecap="round"/>
-<rect x="66" y="22" width="2" height="2" rx="1" fill="black"/>
-<rect x="62" y="22" width="2" height="2" rx="1" fill="black"/>
-<rect x="58" y="22" width="2" height="2" rx="1" fill="black"/>
+<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="8" y="38" width="30" height="30" rx="4" transform="rotate(-90 8 38)" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<line x1="36.2929" y1="36.7071" x2="9.29289" y2="9.70711" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<line x1="9.29289" y1="36.2929" x2="36.2929" y2="9.29289" stroke="black" stroke-width="2" stroke-linejoin="round"/>
 </svg>
