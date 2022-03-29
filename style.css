@@ -26,7 +26,8 @@
   --font-size-xxxl: clamp(1.8rem, 5.81vw + 0.35rem, 5rem);
   /*font-weight*/
   --heavy: 800;
-  --medium: 600;
+  --xmedium: 600;
+  --medium: 500;
   --regular: 400;
   --light: 300;
   /*Color*/
@@ -43,7 +44,13 @@
     #b0c6f6 51%,
     #8ae76d 100%
   );
-  --gradient-hover: linear-gradient(45deg, #e9e080, #8ae76d);
+
+  --gradient-hover: linear-gradient(
+    to right,
+    #e9e080 0%,
+    #b0c6f6 51%,
+    #8ae76d 100%
+  );
 
   /*Border*/
   --border-thick: 4px solid #000;
@@ -89,9 +96,18 @@ main > * {
 
 .heading-lead {
   font-size: var(--font-size-md);
-  font-weight: var(--medium);
+  font-weight: var(--xmedium);
   text-shadow: none;
   color: var(--font);
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.variant-btn {
+  background-image: var(--gradient-hover);
 }
 
 a {
@@ -108,7 +124,7 @@ h1,
   color: var(--white);
   /* text-shadow: var(--text-outline); */
   -webkit-text-stroke: 2px black;
-  text-stroke: 2px black;
+  line-height: 112%;
 
   letter-spacing: 2px;
 }
@@ -124,6 +140,11 @@ h3 {
 .p-lead {
   font-size: var(--font-size-base);
   font-weight: var(--medium);
+}
+
+.heading-lead {
+  font-weight: var(--xmedium);
+  margin-bottom: 0;
 }
 p {
   font-size: var(--font-size-base);
@@ -219,7 +240,7 @@ nav ul {
 button {
   margin: var(--spacing-4) 0;
   font-size: var(--font-size-md);
-  font-weight: var(--regular);
+  font-weight: var(--medium);
   border: var(--border-thin);
   border-radius: var(--radius-rounded);
   background-image: var(--gradient-btn);
@@ -294,12 +315,29 @@ button:active {
 textarea,
 input {
   width: 90%;
-  background-color: var(--blue);
+  border: none;
   border-radius: var(--radius-rounded);
+
   border: var(--border-thin);
   font-family: "inter", sans-serif;
   font-size: var(--font-size-sm);
   padding: var(--spacing-1);
+}
+
+.form-p {
+  font-weight: var(--medium);
+}
+
+.label1 {
+  background-color: var(--blue);
+}
+
+.label2 {
+  background-color: var(--purple);
+}
+
+.label3 {
+  background-color: var(--yellow);
 }
 
 form-p {
@@ -314,10 +352,44 @@ input {
   height: 2rem;
 }
 
+a.svg {
+  border: none;
+  width: 5rem;
+}
+
+a .svg:hover {
+  fill: var(--yellow);
+}
+
+.sm-links {
+  display: none;
+}
+
 @media screen and (min-width: 800px) {
   main {
     display: grid;
     grid-template-columns: 20% 1fr 20%;
+  }
+
+  .right h3 {
+    text-align: right;
+  }
+
+  .right .p-lead {
+    text-align: right;
+  }
+
+  .section {
+    margin-bottom: var(--spacing-16);
+  }
+
+  .sm-links {
+    position: fixed;
+    display: block;
+    top: 50%;
+    left: 92%;
+    display: flex;
+    flex-direction: column;
   }
 
   .red {
@@ -405,6 +477,10 @@ input {
     overflow-x: visible;
   }
 
+  .projekter a {
+    display: inherit;
+  }
+
   .projekter img {
     width: 100%;
     height: auto;
@@ -441,12 +517,6 @@ input {
   textarea,
   input {
     width: 100%;
-    background-color: var(--blue);
-    border-radius: var(--radius-rounded);
-    border: var(--border-thin);
-    font-family: "inter", sans-serif;
-    font-size: var(--font-size-sm);
-    padding: var(--spacing-1);
   }
 
   form-p {
