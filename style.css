@@ -94,6 +94,7 @@ main {
   z-index: 100;
   -webkit-text-stroke: 2px black;
   pointer-events: none;
+  transition: var(--easing-fast);
 }
 
 #projekt {
@@ -106,7 +107,8 @@ main {
 }
 
 .section {
-  margin: var(--spacing-16) 0;
+  margin-bottom: var(--spacing-16);
+  margin-top: var(--spacing-16);
 }
 
 * {
@@ -152,6 +154,7 @@ h2 {
 h3 {
   font-size: var(--font-size-xl);
   margin-bottom: var(--spacing-1);
+  text-transform: uppercase;
 }
 
 .p-lead {
@@ -300,7 +303,7 @@ button {
   background-size: 200% auto;
   padding: var(--spacing-1) var(--spacing-2);
   cursor: pointer;
-  width: 15rem;
+  width: 12rem;
   transition: var(--easing-fast);
   text-align: center;
   justify-self: center;
@@ -554,12 +557,10 @@ a .svg:hover {
   }
 
   .projekter img {
-    filter: brightness(0.7);
     transition: var(--easing);
   }
 
   .projekter img:hover {
-    filter: brightness(1);
     transform: scale(1.01);
   }
 
