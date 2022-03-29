@@ -27,7 +27,7 @@
   /*font-weight*/
   --heavy: 800;
   --xmedium: 600;
-  --medium: 500;
+  --medium: 550;
   --regular: 400;
   --light: 300;
   /*Color*/
@@ -416,7 +416,7 @@ input {
 }
 
 .label3 {
-  background-color: var(--yellow);
+  background-color: var(--green);
 }
 
 form-p {

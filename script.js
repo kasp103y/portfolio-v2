@@ -5,6 +5,7 @@ const ub = document.querySelector("#ub");
 const grob = document.querySelector("#grob");
 const spil = document.querySelector("#spil");
 const body = document.querySelector("body");
+const projekt = document.querySelector("#projekt");
 
 bogino.addEventListener("mouseenter", boginoFarve);
 bogino.addEventListener("mouseleave", boginoNot);
