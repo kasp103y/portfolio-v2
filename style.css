@@ -37,6 +37,7 @@
   --yellow: #e9e080;
   --font: #000;
   --white: #fff;
+  --white-trans: rgba(255, 255, 255, 0.623);
 
   --gradient-btn: linear-gradient(
     to right,
@@ -70,6 +71,7 @@
   --spacing-64: 32rem;
   /*Easeing*/
   --easing: 250ms ease-out;
+  --easing-fast: 150ms ease-out;
 }
 
 html {
@@ -82,6 +84,24 @@ body {
 
 main {
   margin: 0 var(--spacing-1);
+  align-content: center;
+}
+#center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  -webkit-text-stroke: 2px black;
+}
+
+#projekt {
+  margin: 0 auto;
+  font-size: var(--font-size-xxxl);
+
+  pointer-events: none;
+  text-transform: uppercase;
+  font-weight: var(--heavy);
 }
 
 .section {
@@ -104,10 +124,6 @@ main {
 .btn {
   display: flex;
   justify-content: space-around;
-}
-
-.variant-btn {
-  background-image: var(--gradient-hover);
 }
 
 a {
@@ -181,18 +197,38 @@ img {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: center;
   padding: 0 var(--spacing-2);
   position: fixed;
   min-width: 100vw;
   z-index: 1000;
+  background-color: var(--white-trans);
 }
 
 nav ul {
   display: flex;
   gap: var(--spacing-4);
   list-style: none;
+}
+
+nav ul li a {
+  font-weight: var(--xmedium);
+  font-size: var(--font-size-sm);
+  transition: var(--easing);
+  padding: var(--spacing-1) var(--spacing-2);
+}
+nav ul li a:hover {
+  margin: var(--spacing-4) 0;
+
+  border-radius: var(--radius-rounded);
+  background-color: var(--yellow);
+  background-size: 200% auto;
+
+  cursor: pointer;
+
+  text-align: center;
+  justify-self: center;
 }
 
 .links {
@@ -237,7 +273,7 @@ nav ul {
   justify-self: center;
 }
 
-button {
+/* button {
   margin: var(--spacing-4) 0;
   font-size: var(--font-size-md);
   font-weight: var(--medium);
@@ -251,22 +287,54 @@ button {
   transition: var(--easing);
   text-align: center;
   justify-self: center;
+} */
+
+button {
+  margin: var(--spacing-4) 0;
+  font-size: var(--font-size-md);
+  font-weight: var(--medium);
+  border: var(--border-thin);
+  border-radius: var(--radius-rounded);
+  background-color: var(--yellow);
+  background-size: 200% auto;
+  padding: var(--spacing-1) var(--spacing-2);
+  cursor: pointer;
+  width: 15rem;
+  transition: var(--easing-fast);
+  text-align: center;
+  justify-self: center;
+  box-shadow: 0 8px 0 var(--font);
 }
 
+/* .variant-btn {
+  background-image: var(--gradient-hover);
+} */
+
+.variant-btn {
+  background-color: var(--blue);
+}
+button:hover {
+  box-shadow: 0 4px 0 var(--font), inset -100px 100px rgba(0, 0, 0, 0.205);
+}
+button:active {
+  box-shadow: inset -100px 100px rgba(0, 0, 0, 0.205);
+  transform: translateY(2px);
+}
+/* 
+button:hover {
+  background-position: right center;
+} */
+/* 
+button:active {
+  box-shadow: inset 2px 2px black, inset -2px -2px black;
+}
+ */
 .desktop-btn {
   display: none;
 }
 
 .mobile-btn {
   display: block;
-}
-
-button:hover {
-  background-position: right center;
-}
-
-button:active {
-  box-shadow: inset 2px 2px black, inset -2px -2px black;
 }
 
 .cards {
@@ -365,7 +433,7 @@ a.svg {
 }
 
 a .svg:hover {
-  fill: var(--yellow);
+  color: var(--yellow);
 }
 
 .sm-links {
@@ -423,6 +491,7 @@ a .svg:hover {
 
   .greenspil {
     background-color: #6bd662;
+    color: var(--yellow);
   }
 
   .darkpurple {
