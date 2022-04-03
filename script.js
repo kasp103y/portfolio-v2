@@ -7,6 +7,68 @@ const spil = document.querySelector("#spil");
 const body = document.querySelector("body");
 const projekt = document.querySelector("#projekt");
 
+//Modal const
+//Cosmic
+const cosmicModal = document.querySelector("#cosmic-modal");
+const offCosmic = document.querySelector(".close-cosmic");
+
+//Bogino
+const boginoModal = document.querySelector("#bogino-modal");
+const offBogino = document.querySelector(".close-bogino");
+
+//Spil
+const spilModal = document.querySelector("#spil-modal");
+const offSpil = document.querySelector(".close-spil");
+
+//Musikloftet
+const musikModal = document.querySelector("#musik-modal");
+const offMusik = document.querySelector(".close-musik");
+
+const modal = document.querySelector(".modal");
+
+//Modal functions
+bogino.addEventListener("click", openBogino);
+offBogino.addEventListener("click", closeBogino);
+
+function closeBogino() {
+  boginoModal.close();
+}
+function openBogino() {
+  boginoModal.showModal();
+}
+
+cosmic.addEventListener("click", openCosmic);
+offCosmic.addEventListener("click", closeCosmic);
+
+function closeCosmic() {
+  cosmicModal.close();
+}
+function openCosmic() {
+  cosmicModal.showModal();
+}
+
+spil.addEventListener("click", openSpil);
+offSpil.addEventListener("click", closeSpil);
+
+function closeSpil() {
+  spilModal.close();
+}
+function openSpil() {
+  spilModal.showModal();
+}
+
+musikloft.addEventListener("click", openMusik);
+offMusik.addEventListener("click", closeMusik);
+
+function closeMusik() {
+  musikModal.close();
+}
+function openMusik() {
+  musikModal.showModal();
+}
+
+//Modals over and out
+
 bogino.addEventListener("mouseenter", boginoFarve);
 bogino.addEventListener("mouseleave", boginoNot);
 musikloft.addEventListener("mouseenter", musikFarve);

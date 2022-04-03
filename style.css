@@ -1,12 +1,3 @@
-.btn-grad {
-  background-image: linear-gradient(
-    to right,
-    #ff512f 0%,
-    #dd2476 51%,
-    #ff512f 100%
-  );
-}
-
 @font-face {
   font-family: "inter";
   src: url("font/inter-variablefont_slntwght-webfont.woff2") format("woff2"),
@@ -17,6 +8,7 @@
 
 :root {
   /*Headings*/
+  --font-size-xs: clamp(0.7rem, 0vw + 0.7rem, 0.7rem);
   --font-size-sm: clamp(0.89rem, 0vw + 0.89rem, 0.89rem);
   --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
   --font-size-md: clamp(1.13rem, 0.83vw + 0.92rem, 1.58rem);
@@ -80,6 +72,11 @@ html {
 
 body {
   transition: var(--easing);
+  background-color: #f8f4ee;
+}
+
+#sprog {
+  font-size: var(--font-size-xs);
 }
 
 main {
@@ -87,23 +84,7 @@ main {
   align-content: center;
 }
 #center {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  -webkit-text-stroke: 2px black;
-  pointer-events: none;
-  transition: var(--easing-fast);
-}
-
-#projekt {
-  margin: 0 auto;
-  font-size: var(--font-size-xxxl);
-
-  pointer-events: none;
-  text-transform: uppercase;
-  font-weight: var(--heavy);
+  display: none;
 }
 
 .section {
@@ -145,7 +126,10 @@ h1,
   -webkit-text-stroke: 2px black;
   line-height: 112%;
 
-  letter-spacing: 2px;
+  letter-spacing: 20%;
+}
+#index-head {
+  color: var(--purple);
 }
 h2 {
   font-size: var(--font-size-xxl);
@@ -444,6 +428,77 @@ a .svg:hover {
   display: none;
 }
 
+footer {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  background-color: var(--blue);
+  padding: var(--spacing-8);
+}
+
+ul {
+  list-style: none;
+}
+
+.foot a,
+.foot {
+  font-size: var(--font-size-sm);
+  font-weight: var(--medium);
+}
+.foot > * {
+  margin-top: var(--spacing-1);
+}
+.fcenter {
+  text-align: center;
+}
+.fleft {
+  text-align: left;
+}
+.fright {
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+.modal {
+  /*  margin: var(--spacing-16) var(--spacing-32); */
+
+  padding: var(--spacing-4) var(--spacing-8);
+  max-width: 1000px;
+  margin: auto;
+  border-radius: var(--radius-rounded);
+}
+dialog::backdrop {
+  background: var(--blue);
+  opacity: 0.5;
+}
+
+.link-prj {
+  border: none;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  aspect-ratio: 1/1;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-prj:hover {
+  box-shadow: none;
+}
+/* 
+.prj-bg {
+  background-image: url("billeder/cosmic.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+  z-index: 2000;
+}
+ */
 @media screen and (min-width: 800px) {
   main {
     display: grid;
@@ -531,6 +586,10 @@ a .svg:hover {
 
   .projekter a {
     display: inherit;
+    filter: brightness(0.8);
+  }
+  .projekter a:hover {
+    filter: brightness(1);
   }
 
   .projekter img {
@@ -583,6 +642,66 @@ a .svg:hover {
 
   #navne {
     display: flex;
+  }
+
+  #center {
+    position: fixed;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    -webkit-text-stroke: 2px black;
+    pointer-events: none;
+    transition: var(--easing-fast);
+  }
+
+  .underside {
+    margin: var(--spacing-32) 0;
+  }
+
+  #projekt {
+    margin: 0 auto;
+    font-size: var(--font-size-xxxl);
+
+    pointer-events: none;
+    text-transform: uppercase;
+    font-weight: var(--heavy);
+  }
+
+  /*   .prj-right img,
+  .prj-left img {
+    width: 25vw;
+  } */
+
+  .prj-right {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    text-align: right;
+  }
+
+  .prj-left {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: var(--spacing-4);
+  }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2);
+  }
+  .proces1,
+  .proces2,
+  .proces3 {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .proces3 {
+    grid-row: 1 / span 2;
   }
 }
 
