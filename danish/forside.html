@@ -63,14 +63,26 @@
             </svg>
           </a>
         </div>
+
         <div class="links">
-          <ul>
-            <li><a href="forside.html">FORSIDE</a></li>
+          <ul
+            id="primary-navigation"
+            class="primary-navigation flex"
+            data-visible="false"
+          >
+            <li class="active"><a href="forside.html">FORSIDE</a></li>
             <li><a href="portfolio.html">PORTFOLIO</a></li>
             <li><a href="om.html">OM MIG</a></li>
             <li><a href="kontakt.html">KONTAKT</a></li>
             <li><a id="sprog" href="../english/frontpage.html">ENG/DAN</a></li>
           </ul>
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="sr-only">menu</span>
+          </button>
         </div>
       </nav>
       <section class="hero">
@@ -85,8 +97,8 @@
             DIN NYE PRAKTIKANT<span class="question">?</span>
           </h1>
           <p class="heading-lead">MULTIMEDIEDESIGN | UI/UX | DIGITAL DESIGN</p>
-          <a href="portfolio.html"><button>PORTFOLIO</button></a>
-          <article class="cards">
+          <a href="portfolio.html"><button class="button">PORTFOLIO</button></a>
+          <!--      <article class="cards">
             <article class="card card-1">
               <figure>
                 <svg
@@ -195,7 +207,7 @@
                 odit!
               </p>
             </article>
-          </article>
+          </article> -->
           <div class="arrow">
             <svg
               width="24"
@@ -323,20 +335,79 @@
           </article>
           <!--------------------------Bogino modal------------------------>
           <dialog class="modal" id="bogino-modal">
-            <article class="prj-left">
-              <figure>
-                <img src="../billeder/cosmic-font-grid.jpg" alt="" />
-              </figure>
-              <article>
-                <h3>COSMIC FONT</h3>
-                <p>
-                  Cosmic er inspireret af runer og origami. Skriften har en
-                  skarp og foldet karakter. Den bruges til store headings.
-                </p>
+            <button class="close close-bogino">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="35px"
+                viewBox="0 0 24 24"
+                width="35px"
+                fill="#000000"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M13.89 8.7L12 10.59 10.11 8.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                />
+              </svg>
+            </button>
+            <article class="content-modal">
+              <h3>BOGINO</h3>
+              <article class="modal-portfolio">
+                <figure class="modal-img">
+                  <img src="../billeder/bogino/bogino-front.png" alt="" />
+                  <img src="../billeder/bogino/bogino-front.png" alt="" />
+                  <img src="../billeder/bogino/bogino-front.png" alt="" />
+                </figure>
+                <article class="modal-top-text">
+                  <article class="modal-left modal-text">
+                    <p class="p-lead">Bogino Redesign</p>
+                    <p class="modal-p">
+                      Gruppeprojektet var et redesign af tøjmærket Bogino.
+                      Dertil er der blevet bygget en webshop-prototype i
+                      Wordpress, lavet SoMe-materiale og en kampagne video der
+                      skulle fange essensen af Bogino
+                    </p>
+                  </article>
+                  <article class="modal-left modal-text">
+                    <p class="p-lead">Efterdesign</p>
+                    <p class="modal-p">
+                      Efter projektet blev afleveret til klienten, lavede jeg et
+                      redesign af vores oprindelige løsning som et led i mit
+                      eksamensprojekt. Prototypen blev lavet i XD og havde fokus
+                      på mobil-brugervenlighed
+                    </p>
+                  </article>
+                </article>
+                <article class="modal-grid">
+                  <article class="modal-text-wrapper">
+                    <article class="modal-left modal-text">
+                      <p class="p-lead">Værktøjer</p>
+                      <ul class="modal-p">
+                        <li>Wordpress</li>
+                        <li>XD</li>
+                        <li>Photoshop</li>
+                        <li>Premier pro</li>
+                        <li>Rest API</li>
+                      </ul>
+                    </article>
+                  </article>
+
+                  <article class="modal-video">
+                    <p class="p-lead">Video</p>
+                    <figure>
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/uwpgY8Xdqjo"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </figure>
+                  </article>
+                </article>
               </article>
             </article>
-
-            <button class="close-bogino">Luk</button>
           </dialog>
 
           <!------------------------bogino modal slut---------------------------------->
@@ -362,6 +433,84 @@
 
           <!--------------------------Spil modal------------------------>
           <dialog class="modal" id="spil-modal">
+            <button class="close close-spil">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="35px"
+                viewBox="0 0 24 24"
+                width="35px"
+                fill="#000000"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M13.89 8.7L12 10.59 10.11 8.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                />
+              </svg>
+            </button>
+            <article class="content-modal">
+              <h3>BOGINO</h3>
+              <article class="modal-portfolio">
+                <figure class="modal-img">
+                  <img src="../billeder/spil.jpg" alt="" />
+                  <img src="../billeder/spil.jpg" alt="" />
+                  <img src="../billeder/spil.jpg" alt="" />
+                </figure>
+                <article class="modal-top-text">
+                  <article class="modal-left modal-text">
+                    <p class="p-lead">Bogino Redesign</p>
+                    <p class="modal-p">
+                      Gruppeprojektet var et redesign af tøjmærket Bogino.
+                      Dertil er der blevet bygget en webshop-prototype i
+                      Wordpress, lavet SoMe-materiale og en kampagne video der
+                      skulle fange essensen af Bogino
+                    </p>
+                  </article>
+                  <article class="modal-left modal-text">
+                    <p class="p-lead">Efterdesign</p>
+                    <p class="modal-p">
+                      Efter projektet blev afleveret til klienten, lavede jeg et
+                      redesign af vores oprindelige løsning som et led i mit
+                      eksamensprojekt. Prototypen blev lavet i XD og havde fokus
+                      på mobil-brugervenlighed
+                    </p>
+                  </article>
+                </article>
+                <article class="modal-grid">
+                  <article class="modal-text-wrapper">
+                    <article class="modal-left modal-text">
+                      <p class="p-lead">Værktøjer</p>
+                      <ul class="modal-p">
+                        <li>Wordpress</li>
+                        <li>XD</li>
+                        <li>Photoshop</li>
+                        <li>Premier pro</li>
+                        <li>Rest API</li>
+                      </ul>
+                    </article>
+                  </article>
+
+                  <article class="modal-video">
+                    <p class="p-lead">Video</p>
+                    <figure>
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/uwpgY8Xdqjo"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </figure>
+                  </article>
+                </article>
+              </article>
+            </article>
+          </dialog>
+
+          <!------------------------bogino modal slut---------------------------------->
+          <!--------------------------Cosmic modal------------------------>
+          <dialog class="modal" id="cosmic-modal">
             <article class="prj-left">
               <figure>
                 <img src="../billeder/cosmic-font-grid.jpg" alt="" />
@@ -375,12 +524,12 @@
               </article>
             </article>
 
-            <button class="close-spil">Luk</button>
+            <button class="close-cosmic">Luk</button>
           </dialog>
 
           <!------------------------Spil modal slut---------------------------------->
 
-          <!--------------------------Spil modal------------------------>
+          <!--------------------------Musik modal------------------------>
           <dialog class="modal" id="musik-modal">
             <article class="prj-left">
               <figure>
@@ -398,7 +547,47 @@
             <button class="close-musik">Luk</button>
           </dialog>
 
-          <!------------------------Spil modal slut---------------------------------->
+          <!------------------------Musik modal slut---------------------------------->
+
+          <!--------------------------Ungdomsbyen modal------------------------>
+          <dialog class="modal" id="ub-modal">
+            <article class="prj-left">
+              <figure>
+                <img src="../billeder/cosmic-font-grid.jpg" alt="" />
+              </figure>
+              <article>
+                <h3>COSMIC FONT</h3>
+                <p>
+                  Cosmic er inspireret af runer og origami. Skriften har en
+                  skarp og foldet karakter. Den bruges til store headings.
+                </p>
+              </article>
+            </article>
+
+            <button class="close-ub">Luk</button>
+          </dialog>
+
+          <!------------------------UB modal slut---------------------------------->
+
+          <!--------------------------Grob modal------------------------>
+          <dialog class="modal" id="grob-modal">
+            <article class="prj-left">
+              <figure>
+                <img src="../billeder/cosmic-font-grid.jpg" alt="" />
+              </figure>
+              <article>
+                <h3>COSMIC FONT</h3>
+                <p>
+                  Cosmic er inspireret af runer og origami. Skriften har en
+                  skarp og foldet karakter. Den bruges til store headings.
+                </p>
+              </article>
+            </article>
+
+            <button class="close-grob">Luk</button>
+          </dialog>
+
+          <!------------------------Grob modal slut---------------------------------->
         </section>
         <section class="om section">
           <article>
@@ -416,11 +605,11 @@
                 designe hjemmesider, er jeg at finde i mit lokale CrossFit
                 center på Amager eller ude at bade i vinterens kolde vejr.
               </p>
-              <button class="desktop-btn">LÆS MERE</button>
+              <button class="desktop-btn button">LÆS MERE</button>
             </article>
 
             <figure><img src="../billeder/mig-wet.jpg" alt="" /></figure>
-            <button class="mobile-btn">LÆS MERE</button>
+            <button class="mobile-btn button">LÆS MERE</button>
           </article>
         </section>
         <section class="kontakt section right">
@@ -460,7 +649,7 @@
               </label>
             </p>
             <p>
-              <button type="submit">SEND</button>
+              <button class="button" type="submit">SEND</button>
             </p>
           </form>
         </section>

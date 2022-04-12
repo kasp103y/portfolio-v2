@@ -1,3 +1,19 @@
+const primaryNav = document.querySelector(".primary-navigation");
+const navToggle = document.querySelector(".mobile-nav-toggle");
+
+navToggle.addEventListener("click", () => {
+  const visibility = primaryNav.getAttribute("data-visible");
+  console.log(visibility);
+
+  if (visibility === "false") {
+    navToggle.setAttribute("aria-expanded", true);
+    primaryNav.setAttribute("data-visible", true);
+  } else if (visibility === "true") {
+    primaryNav.setAttribute("data-visible", false);
+    navToggle.setAttribute("aria-expanded", false);
+  }
+});
+
 const bogino = document.querySelector("#bogino");
 const musikloft = document.querySelector("#musik");
 const cosmic = document.querySelector("#cosmic");
@@ -23,6 +39,14 @@ const offSpil = document.querySelector(".close-spil");
 //Musikloftet
 const musikModal = document.querySelector("#musik-modal");
 const offMusik = document.querySelector(".close-musik");
+
+//Ungdomsbyen
+const ubModal = document.querySelector("#ub-modal");
+const offUb = document.querySelector(".close-ub");
+
+//grob
+const grobModal = document.querySelector("#grob-modal");
+const offGrob = document.querySelector(".close-grob");
 
 const modal = document.querySelector(".modal");
 
@@ -65,6 +89,26 @@ function closeMusik() {
 }
 function openMusik() {
   musikModal.showModal();
+}
+
+ub.addEventListener("click", openUb);
+offUb.addEventListener("click", closeUb);
+
+function closeUb() {
+  ubModal.close();
+}
+function openUb() {
+  ubModal.showModal();
+}
+
+grob.addEventListener("click", openGrob);
+offGrob.addEventListener("click", closeGrob);
+
+function closeGrob() {
+  grobModal.close();
+}
+function openGrob() {
+  grobModal.showModal();
 }
 
 //Modals over and out
