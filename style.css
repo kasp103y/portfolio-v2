@@ -221,7 +221,7 @@ footer > * {
 }
 
 /* Mobile nav */
-@media (max-width: 35em) {
+@media (max-width: 800px) {
   .primary-navigation {
     inset: 0 0 0 30%;
     gap: var(--gap, 1rem);
@@ -261,6 +261,9 @@ footer > * {
 
   .primary-navigation[data-visible="true"] {
     transform: translateX(0%);
+    -webkit-box-shadow: 1px 4px 5px 200px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 1px 4px 5px 200px rgba(0, 0, 0, 0.48);
+    box-shadow: 1px 4px 5px 200px rgba(0, 0, 0, 0.48);
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
@@ -526,6 +529,15 @@ a {
   padding: var(--spacing-2);
 }
 
+.flex-btn {
+  display: flex;
+  justify-content: end;
+}
+
+.modal-p {
+  margin: var(--spacing-4) 0;
+}
+
 .iframe-container {
   position: relative;
   width: 100%;
@@ -544,6 +556,10 @@ dialog::backdrop {
   background: rgba(0, 0, 0, 0.53);
 }
 
+.modal-top-text {
+  margin-block: var(--spacing-4);
+}
+
 .link-prj {
   border: none;
   width: 100%;
@@ -554,6 +570,9 @@ dialog::backdrop {
   padding: 0;
   margin: 0;
 }
+.modal-img {
+  margin: var(--spacing-4) 0;
+}
 
 .close {
   border: none;
@@ -563,9 +582,9 @@ dialog::backdrop {
   position: fixed;
   box-shadow: none;
   padding: 0;
-  margin: 0;
-  top: 3%;
-  left: 77%;
+  margin: -0.5 -0.3rem;
+  /*   top: 3%;
+  left: 77%; */
 }
 
 .close:hover {
@@ -616,6 +635,14 @@ dialog::backdrop {
   z-index: 2000;
 }
  */
+.tools {
+  background-color: var(--green);
+  padding: var(--spacing-1);
+  border-radius: var(--radius-rounded);
+  border: var(--border-thin);
+  text-align: center;
+}
+
 @media screen and (min-width: 800px) {
   main {
     display: grid;
@@ -626,10 +653,46 @@ dialog::backdrop {
     /*  margin: var(--spacing-16) var(--spacing-32); */
 
     padding: var(--spacing-1) var(--spacing-16);
-    width: 60vw;
+    width: 80vw;
     margin: auto;
     border-radius: var(--radius-rounded-lg);
   }
+
+  .modal-img {
+    width: 25vw;
+    margin: 0;
+  }
+
+  .tools {
+    background-color: var(--green);
+    padding-inline: var(--spacing-2);
+    padding-block: var(--spacing-4);
+    border-radius: var(--radius-rounded);
+    border: var(--border-thin);
+    text-align: center;
+  }
+  .tools p {
+    text-align: center;
+  }
+  .tool {
+    display: flex;
+    gap: var(--spacing-4);
+    justify-content: center;
+  }
+
+  .tool-item {
+    border-inline: var(--border-thin);
+    padding-inline: var(--spacing-2);
+  }
+
+  .flex-right {
+    flex-direction: row-reverse;
+  }
+
+  .modal-text {
+    align-self: center;
+  }
+
   .center-intro {
     text-align: start;
   }
