@@ -165,6 +165,10 @@ li {
   align-content: start;
 }
 
+.mi {
+  margin-inline: var(--spacing-4);
+}
+
 img,
 video {
   height: auto;
@@ -364,7 +368,7 @@ nav ul li a:hover {
 
 .button {
   margin: var(--spacing-4) 0;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
   font-weight: var(--medium);
   border: var(--border-thin);
   border-radius: var(--radius-rounded);
@@ -372,7 +376,7 @@ nav ul li a:hover {
   background-size: 200% auto;
   padding: var(--spacing-1) var(--spacing-2);
   cursor: pointer;
-  width: 12rem;
+  width: 10rem;
   transition: var(--easing-fast);
   text-align: center;
   /* justify-self: center; */
@@ -1098,6 +1102,16 @@ address a {
   .kontakt-page {
     display: flex;
     gap: var(--spacing-4);
+  }
+
+  .button {
+    font-size: var(--font-size-md);
+
+    width: 12rem;
+  }
+
+  .mi {
+    margin-inline: 0;
   }
 }
 
