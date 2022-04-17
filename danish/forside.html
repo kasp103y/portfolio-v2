@@ -71,7 +71,7 @@
             data-visible="false"
           >
             <li class="active"><a href="forside.html">FORSIDE</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="#portfolio-section">PORTFOLIO</a></li>
             <li><a href="om.html">OM MIG</a></li>
             <li><a href="kontakt.html">KONTAKT</a></li>
             <li><a id="sprog" href="../english/frontpage.html">ENG/DAN</a></li>
@@ -97,7 +97,7 @@
             DIN NYE PRAKTIKANT<span class="question">?</span>
           </h1>
           <p class="heading-lead">MULTIMEDIEDESIGN | UI/UX | DIGITAL DESIGN</p>
-          <a href="portfolio.html"><button class="button">PORTFOLIO</button></a>
+          <a class="button" href="#portfolio-section">PORTFOLIO</a>
           <!--      <article class="cards">
             <article class="card card-1">
               <figure>
@@ -231,7 +231,10 @@
         </article>
       </section>
       <section class="sm-links">
-        <a href="#"
+        <a
+          href="mailto:kaspernikolajsendahl@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           ><svg
             class="svg"
             width="52"
@@ -260,7 +263,10 @@
             />
           </svg>
         </a>
-        <a href="#"
+        <a
+          href="https://github.com/kasp103y"
+          target="_blank"
+          rel="noopener noreferrer"
           ><svg
             class="svg"
             width="52"
@@ -276,7 +282,10 @@
             />
           </svg>
         </a>
-        <a href="#"
+        <a
+          href="https://www.linkedin.com/in/kaspernikolajsendahl-digitaldesign/"
+          target="_blank"
+          rel="noopener noreferrer"
           ><svg
             class="svg"
             width="52"
@@ -310,27 +319,30 @@
     <main>
       <article id="center"><p id="projekt"></p></article>
       <section class="wrapper">
-        <section class="portfolio-section section">
+        <section class="portfolio-section section" id="portfolio-section">
           <h3 class="right">Min portfolio</h3>
           <article class="projekter">
             <button class="link-prj" id="bogino" href="projekt.html">
               <img src="../billeder/bogino-grid.jpg" alt="Bogino" />
             </button>
             <button class="link-prj" id="cosmic">
-              <img src="../billeder/cosmic-font-grid.jpg" alt="Bogino" />
+              <img src="../billeder/cosmic-font-grid.jpg" alt="Cosmic font" />
             </button>
             <button class="link-prj" id="spil" href="projekt.html">
-              <img src="../billeder/spil.jpg" alt="Bogino" />
+              <img src="../billeder/spil.jpg" alt="Save thy flower" />
             </button>
             <button class="link-prj" id="musik" href="projekt.html">
-              <img src="../billeder/musikloftet.jpg" alt="Bogino" />
+              <img src="../billeder/musikloftet.jpg" alt="Musikloftet" />
             </button>
-            <button class="link-prj" id="ub" href="projekt.html">
-              <img src="../billeder/ungdomsby-midlertidig.jpg" alt="Bogino" />
-            </button>
+            <!-- <button class="link-prj" id="ub" href="projekt.html">
+              <img
+                src="../billeder/ungdomsby-midlertidig.jpg"
+                alt="Ungdomsbyen"
+              />
+            </button> -->
 
             <button class="link-prj" id="grob" href="projekt.html">
-              <img src="../billeder/grob.jpg" alt="Bogino" />
+              <img src="../billeder/grob.jpg" alt="Grob" />
             </button>
           </article>
           <!--------------------------Bogino modal------------------------>
@@ -386,7 +398,7 @@
                     på mobil-brugervenlighed
                   </p>
                   <a class="button modal-link variant-btn" href="#"
-                    >SE PROTOTYPE</a
+                    >PROTOTYPE</a
                   >
                 </article>
                 <article class="modal-left">
@@ -455,12 +467,12 @@
 
               <article class="modal-top-text">
                 <article class="modal-left modal-text">
-                  <p class="p-lead">Cosmic</p>
+                  <p class="p-lead">Typografien</p>
                   <p class="modal-p">
-                    Gruppeprojektet var et redesign af tøjmærket Bogino. Dertil
-                    er der blevet bygget en webshop-prototype i Wordpress, lavet
-                    SoMe-materiale og en kampagne video der skulle fange
-                    essensen af Bogino
+                    Cosmic er mit første forsøg på at lave en display font. Den
+                    er inspireret af kaligrafi, cyperpunk og nordiske runer. Mit
+                    mål var at lave en font der skiller sig ud med et
+                    futuristisk udtryk.
                   </p>
                   <a
                     class="button modal-link"
@@ -468,46 +480,33 @@
                     >SE SITE</a
                   >
                 </article>
-                <article class="modal-left">
-                  <figure class="modal-img">
-                    <img src="../billeder/cosmic-font-grid.jpg" alt="" />
-                  </figure>
-                </article>
-              </article>
-              <article class="modal-top-text flex-right">
-                <article class="modal-text right">
-                  <p class="p-lead">Efterdesign</p>
-                  <p class="modal-p">
-                    Efter projektet blev afleveret til klienten, lavede jeg et
-                    redesign af vores oprindelige løsning som et led i mit
-                    eksamensprojekt. Prototypen blev lavet i XD og havde fokus
-                    på mobil-brugervenlighed
-                  </p>
-                  <a class="button modal-link variant-btn" href="#"
-                    >SE PROTOTYPE</a
-                  >
-                </article>
-                <article class="modal-left">
-                  <figure class="modal-img">
-                    <img src="../billeder/cosmic-font-grid.jpg" alt="" />
-                  </figure>
-                </article>
-              </article>
 
+                <article class="modal-left">
+                  <figure class="modal-img">
+                    <img src="../billeder/cosmic-font-grid.jpg" alt="" />
+                  </figure>
+                </article>
+              </article>
               <article class="modal-text-wrapper tools">
                 <article class="modal-left modal-text">
                   <p class="p-lead">Værktøjer</p>
                   <ul class="modal-p tool">
-                    <li class="tool-item">Wordpress</li>
+                    <li class="tool-item">HTML</li>
 
-                    <li class="tool-item">XD</li>
+                    <li class="tool-item">CSS</li>
 
-                    <li class="tool-item">Photoshop</li>
-
-                    <li class="tool-item">Premier pro</li>
-
-                    <li class="tool-item">Rest API</li>
+                    <li class="tool-item">Illustrator</li>
+                    <li class="tool-item">Figma</li>
                   </ul>
+                </article>
+              </article>
+              <article class="flex-right">
+                <article class="modal-left galleri">
+                  <figure class="img-grid">
+                    <img src="../billeder/cosmic/proces1.jpg" alt="" />
+                    <img src="../billeder/cosmic/proces2.jpg" alt="" />
+                    <img src="../billeder/cosmic/proces3.jpg" alt="" />
+                  </figure>
                 </article>
               </article>
             </article>
@@ -535,63 +534,50 @@
             </div>
 
             <article class="content-modal">
-              <h3>COSMIC FONT</h3>
+              <h3>SAVE THY FLOWER</h3>
 
               <article class="modal-top-text">
                 <article class="modal-left modal-text">
-                  <p class="p-lead">Cosmic</p>
+                  <p class="p-lead">Spillet</p>
                   <p class="modal-p">
-                    Gruppeprojektet var et redesign af tøjmærket Bogino. Dertil
-                    er der blevet bygget en webshop-prototype i Wordpress, lavet
-                    SoMe-materiale og en kampagne video der skulle fange
-                    essensen af Bogino
+                    I spillet "SAVE THY FLOWER" skal man samle vand til en
+                    blomst i det varme australien før den tørrer ud og dør i det
+                    varme australske klima. Spillet er lavet i HTML, CSS og
+                    JavaScript.
                   </p>
                   <a
                     class="button modal-link"
                     href="https://truttedyret.dk/kea/2_sem/bogino_eksamen/bogino_wp/"
-                    >SE SITE</a
+                    >SPIL</a
                   >
                 </article>
                 <article class="modal-left">
                   <figure class="modal-img">
-                    <img src="../billeder/cosmic-font-grid.jpg" alt="" />
+                    <img src="../billeder/spil.jpg" alt="" />
                   </figure>
                 </article>
               </article>
-              <article class="modal-top-text flex-right">
-                <article class="modal-text right">
-                  <p class="p-lead">Efterdesign</p>
-                  <p class="modal-p">
-                    Efter projektet blev afleveret til klienten, lavede jeg et
-                    redesign af vores oprindelige løsning som et led i mit
-                    eksamensprojekt. Prototypen blev lavet i XD og havde fokus
-                    på mobil-brugervenlighed
-                  </p>
-                  <a class="button modal-link variant-btn" href="#"
-                    >SE PROTOTYPE</a
-                  >
-                </article>
-                <article class="modal-left">
-                  <figure class="modal-img">
-                    <img src="../billeder/cosmic-font-grid.jpg" alt="" />
-                  </figure>
-                </article>
-              </article>
-
               <article class="modal-text-wrapper tools">
                 <article class="modal-left modal-text">
                   <p class="p-lead">Værktøjer</p>
                   <ul class="modal-p tool">
-                    <li class="tool-item">Wordpress</li>
+                    <li class="tool-item">HTML</li>
 
-                    <li class="tool-item">XD</li>
+                    <li class="tool-item">CSS</li>
 
-                    <li class="tool-item">Photoshop</li>
+                    <li class="tool-item">JavaScript</li>
 
-                    <li class="tool-item">Premier pro</li>
-
-                    <li class="tool-item">Rest API</li>
+                    <li class="tool-item">Illustrator</li>
                   </ul>
+                </article>
+              </article>
+              <article class="flex-right">
+                <article class="modal-left">
+                  <figure class="flex">
+                    <img src="../billeder/spil/blomst_01.jpg" alt="" />
+                    <img src="../billeder/spil/blomst_02_win.jpg" alt="" />
+                    <img src="../billeder/spil/blomst_03_rip.jpg" alt="" />
+                  </figure>
                 </article>
               </article>
             </article>
@@ -619,16 +605,18 @@
             </div>
 
             <article class="content-modal">
-              <h3>COSMIC FONT</h3>
+              <h3>MUSIKLOFTET</h3>
 
               <article class="modal-top-text">
                 <article class="modal-left modal-text">
-                  <p class="p-lead">Cosmic</p>
+                  <p class="p-lead">Website</p>
                   <p class="modal-p">
-                    Gruppeprojektet var et redesign af tøjmærket Bogino. Dertil
-                    er der blevet bygget en webshop-prototype i Wordpress, lavet
-                    SoMe-materiale og en kampagne video der skulle fange
-                    essensen af Bogino
+                    Musikloftet er en fiktiv caseopgave for en
+                    musiklokaleudlejer. Casen har været en mulighed for mig at
+                    lære at bruge Tailwind CSS, som sitet er bygget med. På
+                    denne case blev der arbejdet med brugervenlighed, men der er
+                    givet plads til at lege med et anderledes design. Vi valgte
+                    at gøre brug af Metro/flatdesign, med en rig farvepallete.
                   </p>
                   <a
                     class="button modal-link"
@@ -638,26 +626,7 @@
                 </article>
                 <article class="modal-left">
                   <figure class="modal-img">
-                    <img src="../billeder/cosmic-font-grid.jpg" alt="" />
-                  </figure>
-                </article>
-              </article>
-              <article class="modal-top-text flex-right">
-                <article class="modal-text right">
-                  <p class="p-lead">Efterdesign</p>
-                  <p class="modal-p">
-                    Efter projektet blev afleveret til klienten, lavede jeg et
-                    redesign af vores oprindelige løsning som et led i mit
-                    eksamensprojekt. Prototypen blev lavet i XD og havde fokus
-                    på mobil-brugervenlighed
-                  </p>
-                  <a class="button modal-link variant-btn" href="#"
-                    >SE PROTOTYPE</a
-                  >
-                </article>
-                <article class="modal-left">
-                  <figure class="modal-img">
-                    <img src="../billeder/cosmic-font-grid.jpg" alt="" />
+                    <img src="../billeder/musikloftet.jpg" alt="Musikloftet" />
                   </figure>
                 </article>
               </article>
@@ -666,15 +635,13 @@
                 <article class="modal-left modal-text">
                   <p class="p-lead">Værktøjer</p>
                   <ul class="modal-p tool">
-                    <li class="tool-item">Wordpress</li>
+                    <li class="tool-item">Tailwind CSS</li>
 
-                    <li class="tool-item">XD</li>
+                    <li class="tool-item">Figma</li>
 
                     <li class="tool-item">Photoshop</li>
 
-                    <li class="tool-item">Premier pro</li>
-
-                    <li class="tool-item">Rest API</li>
+                    <li class="tool-item">Illustrator</li>
                   </ul>
                 </article>
               </article>
@@ -787,16 +754,20 @@
             </div>
 
             <article class="content-modal">
-              <h3>COSMIC FONT</h3>
+              <h3>TEATER GROB</h3>
 
               <article class="modal-top-text">
                 <article class="modal-left modal-text">
-                  <p class="p-lead">Cosmic</p>
+                  <p class="p-lead">Det du går glip af</p>
                   <p class="modal-p">
-                    Gruppeprojektet var et redesign af tøjmærket Bogino. Dertil
-                    er der blevet bygget en webshop-prototype i Wordpress, lavet
-                    SoMe-materiale og en kampagne video der skulle fange
-                    essensen af Bogino
+                    Dette projekt er en caseopgave for Teater Grob på Nørrebro.
+                    Jeg og min gruppe fik til at opgave at sælge årskort til
+                    teatret med en videokampange. Til dette udarbejdede vi
+                    kampagnen "GROB, Det du går glip af". Kampagnen havde til
+                    formål at vise hvad befolkningen går glip af uden Grob.
+                    Projektet mundede ud i to kampange videoer, "Vaskeriet" og
+                    "Daten". Min rolle i projektet har været konceptudvikling,
+                    video og redigering.
                   </p>
                   <a
                     class="button modal-link"
@@ -806,28 +777,50 @@
                 </article>
                 <article class="modal-left">
                   <figure class="modal-img">
-                    <img src="../billeder/cosmic-font-grid.jpg" alt="" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="211.9"
+                      height="231.6"
+                      viewBox="0 0 2119.658 2316.082"
+                    >
+                      <path
+                        id="Path_74"
+                        data-name="Path 74"
+                        d="M1153.62,872.944c-498.512,39.919-365.186,549.588-365.186,549.588C336.354,1199.718,478.786,775.376,478.786,775.376,802.906-76.806,1483.832,555.939,1483.832,555.939l181.146-191.216C1459.771,161.868,1075.65,75.7,1069.922,74.431a1.321,1.321,0,0,0-.482-.061C324.474,14.551,184.152,757.105,184.152,757.105-.07,1518.593,885.158,1728.2,885.158,1728.2L990.685,1947.76l222.452-97.448-58.372-135.256c246.151-63.92,359.941-274.674,359.941-274.674C1732.455,911.9,1153.62,872.944,1153.62,872.944Zm106.432,461.729c-108.059,158.232-195.919,136.644-195.919,136.644-81.408-280.7,51.678-322.734,118.191-325.327,41.608-1.628,78.151,26.955,91.116,66.513,5.669,17.246,6.813,34.734,6.272,49.266C1278.988,1280.823,1276.455,1310.734,1260.052,1334.673Z"
+                        transform="matrix(0.921, -0.391, 0.391, 0.921, -174.012, 585.257)"
+                        fill="#000"
+                      />
+                    </svg>
                   </figure>
                 </article>
               </article>
-              <article class="modal-top-text flex-right">
-                <article class="modal-text right">
-                  <p class="p-lead">Efterdesign</p>
-                  <p class="modal-p">
-                    Efter projektet blev afleveret til klienten, lavede jeg et
-                    redesign af vores oprindelige løsning som et led i mit
-                    eksamensprojekt. Prototypen blev lavet i XD og havde fokus
-                    på mobil-brugervenlighed
-                  </p>
-                  <a class="button modal-link variant-btn" href="#"
-                    >SE PROTOTYPE</a
-                  >
-                </article>
-                <article class="modal-left">
-                  <figure class="modal-img">
-                    <img src="../billeder/cosmic-font-grid.jpg" alt="" />
-                  </figure>
-                </article>
+              <article class="modal-video">
+                <p class="p-lead">Vaskeriet</p>
+                <figure class="iframe-container">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/d2YyssqGI7w"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </figure>
+              </article>
+              <article class="modal-video">
+                <p class="p-lead">Tinderdaten</p>
+                <figure class="iframe-container">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/uwpgY8Xdqjo"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </figure>
               </article>
 
               <article class="modal-text-wrapper tools">
@@ -871,7 +864,7 @@
             </article>
 
             <figure><img src="../billeder/mig-wet.jpg" alt="" /></figure>
-            <button class="mobile-btn button">LÆS MERE</button>
+            <a class="mobile-btn button">LÆS MERE</a>
           </article>
         </section>
         <section class="kontakt section right">

@@ -17,7 +17,7 @@ navToggle.addEventListener("click", () => {
 const bogino = document.querySelector("#bogino");
 const musikloft = document.querySelector("#musik");
 const cosmic = document.querySelector("#cosmic");
-const ub = document.querySelector("#ub");
+// const ub = document.querySelector("#ub");
 const grob = document.querySelector("#grob");
 const spil = document.querySelector("#spil");
 const body = document.querySelector("body");
@@ -41,8 +41,8 @@ const musikModal = document.querySelector("#musik-modal");
 const offMusik = document.querySelector(".close-musik");
 
 //Ungdomsbyen
-const ubModal = document.querySelector("#ub-modal");
-const offUb = document.querySelector(".close-ub");
+/* const ubModal = document.querySelector("#ub-modal");
+const offUb = document.querySelector(".close-ub"); */
 
 //grob
 const grobModal = document.querySelector("#grob-modal");
@@ -91,7 +91,7 @@ function openMusik() {
   musikModal.showModal();
 }
 
-ub.addEventListener("click", openUb);
+/* ub.addEventListener("click", openUb);
 offUb.addEventListener("click", closeUb);
 
 function closeUb() {
@@ -99,7 +99,7 @@ function closeUb() {
 }
 function openUb() {
   ubModal.showModal();
-}
+} */
 
 grob.addEventListener("click", openGrob);
 offGrob.addEventListener("click", closeGrob);
@@ -119,8 +119,8 @@ musikloft.addEventListener("mouseenter", musikFarve);
 musikloft.addEventListener("mouseleave", musikNot);
 cosmic.addEventListener("mouseenter", cosmicFarve);
 cosmic.addEventListener("mouseleave", cosmicNot);
-ub.addEventListener("mouseenter", ubFarve);
-ub.addEventListener("mouseleave", ubNot);
+/* ub.addEventListener("mouseenter", ubFarve);
+ub.addEventListener("mouseleave", ubNot); */
 grob.addEventListener("mouseenter", grobFarve);
 grob.addEventListener("mouseleave", grobNot);
 spil.addEventListener("mouseenter", spilFarve);
@@ -156,7 +156,7 @@ function cosmicNot() {
   projekt.innerHTML = "";
 }
 
-function ubFarve() {
+/* function ubFarve() {
   body.classList.add("greenub");
   projekt.innerHTML = "Ungdomsbyen";
 }
@@ -164,7 +164,7 @@ function ubFarve() {
 function ubNot() {
   body.classList.remove("greenub");
   projekt.innerHTML = "";
-}
+} */
 
 function grobFarve() {
   body.classList.add("greengrob");
