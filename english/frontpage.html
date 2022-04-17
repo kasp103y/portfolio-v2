@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
-    <title>KasperDesigns | Portfolio</title>
+    <title>Kasper Design | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/billeder/logo.svg" />
   </head>
   <body>
     <header>
       <nav>
         <div class="logo">
-          <a href="index.html"
+          <a id="logo" href="forside.html"
             ><svg
               width="56"
               height="68"
@@ -62,20 +63,32 @@
             </svg>
           </a>
         </div>
+
         <div class="links">
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="index.html">PORTFOLIO</a></li>
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="index.html">CONTACT</a></li>
-            <li><a href="english/home.index"></a></li>
+          <ul
+            id="primary-navigation"
+            class="primary-navigation flex"
+            data-visible="false"
+          >
+            <li class="active"><a href="frontpage.html">HOME</a></li>
+            <li><a href="frontpage.html#portfolio-section">PORTFOLIO</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a id="sprog" href="../danish/forside.html">ENG/DAN</a></li>
           </ul>
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="sr-only">menu</span>
+          </button>
         </div>
       </nav>
       <section class="hero">
         <section class="bg-video">
           <video autoplay muted loop id="min-video">
-            <source src="video/balls.mp4" type="video/mp4" />
+            <source src="../video/balls.mp4" type="video/mp4" />
           </video>
         </section>
         <article class="lead-text">
@@ -84,125 +97,45 @@
             YOUR NEW INTERN<span class="question">?</span>
           </h1>
           <p class="heading-lead">MULTIMEDIA DESIGN | UI/UX | DIGITAL DESIGN</p>
-          <button>PORTFOLIO</button>
-
-          <div class="arrow" style="margin: 10rem 0">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M14.8285 12.0259L16.2427 13.4402L12 17.6828L7.7574 13.4402L9.17161 12.0259L11 13.8544V6.31724H13V13.8544L14.8285 12.0259Z"
-                fill="currentColor"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M19.7782 19.7782C15.4824 24.0739 8.51759 24.0739 4.22183 19.7782C-0.0739417 15.4824 -0.0739417 8.51759 4.22183 4.22183C8.51759 -0.0739419 15.4824 -0.0739419 19.7782 4.22183C24.0739 8.51759 24.0739 15.4824 19.7782 19.7782ZM18.364 18.364C14.8492 21.8787 9.15076 21.8787 5.63604 18.364C2.12132 14.8492 2.12132 9.15076 5.63604 5.63604C9.15076 2.12132 14.8492 2.12132 18.364 5.63604C21.8787 9.15076 21.8787 14.8492 18.364 18.364Z"
-                fill="currentColor"
-              />
-            </svg>
-          </div>
-          <article class="cards">
+          <a class="button" href="#portfolio-section">PORTFOLIO</a>
+          <!--      <article class="cards">
             <article class="card card-1">
               <figure>
                 <svg
-                  width="91"
-                  height="92"
-                  viewBox="0 0 91 92"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <rect width="91" height="92" rx="30" fill="white" />
                   <rect
-                    x="20"
-                    y="30"
-                    width="23"
-                    height="23"
+                    x="8"
+                    y="38"
+                    width="30"
+                    height="30"
                     rx="4"
+                    transform="rotate(-90 8 38)"
                     stroke="black"
                     stroke-width="4"
-                  />
-                  <rect
-                    x="20"
-                    y="20"
-                    width="51"
-                    height="6"
-                    rx="3"
-                    stroke="black"
-                    stroke-width="4"
-                  />
-                  <rect
-                    x="48"
-                    y="30"
-                    width="23"
-                    height="42"
-                    rx="4"
-                    stroke="black"
-                    stroke-width="4"
+                    stroke-linejoin="round"
                   />
                   <line
-                    x1="21"
-                    y1="58"
-                    x2="42"
-                    y2="58"
+                    x1="36.2929"
+                    y1="36.7071"
+                    x2="9.29289"
+                    y2="9.70711"
                     stroke="black"
                     stroke-width="4"
-                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   />
                   <line
-                    x1="21"
-                    y1="62"
-                    x2="42"
-                    y2="62"
+                    x1="9.29289"
+                    y1="36.2929"
+                    x2="36.2929"
+                    y2="9.29289"
                     stroke="black"
                     stroke-width="4"
-                    stroke-linecap="round"
-                  />
-                  <line
-                    x1="21"
-                    y1="66"
-                    x2="42"
-                    y2="66"
-                    stroke="black"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                  />
-                  <line
-                    x1="21"
-                    y1="70"
-                    x2="42"
-                    y2="70"
-                    stroke="black"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                  />
-                  <rect
-                    x="66"
-                    y="22"
-                    width="2"
-                    height="2"
-                    rx="1"
-                    fill="black"
-                  />
-                  <rect
-                    x="62"
-                    y="22"
-                    width="2"
-                    height="2"
-                    rx="1"
-                    fill="black"
-                  />
-                  <rect
-                    x="58"
-                    y="22"
-                    width="2"
-                    height="2"
-                    rx="1"
-                    fill="black"
+                    stroke-linejoin="round"
                   />
                 </svg>
               </figure>
@@ -274,11 +207,34 @@
                 odit!
               </p>
             </article>
-          </article>
+          </article> -->
+          <div class="arrow">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.8285 12.0259L16.2427 13.4402L12 17.6828L7.7574 13.4402L9.17161 12.0259L11 13.8544V6.31724H13V13.8544L14.8285 12.0259Z"
+                fill="currentColor"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M19.7782 19.7782C15.4824 24.0739 8.51759 24.0739 4.22183 19.7782C-0.0739417 15.4824 -0.0739417 8.51759 4.22183 4.22183C8.51759 -0.0739419 15.4824 -0.0739419 19.7782 4.22183C24.0739 8.51759 24.0739 15.4824 19.7782 19.7782ZM18.364 18.364C14.8492 21.8787 9.15076 21.8787 5.63604 18.364C2.12132 14.8492 2.12132 9.15076 5.63604 5.63604C9.15076 2.12132 14.8492 2.12132 18.364 5.63604C21.8787 9.15076 21.8787 14.8492 18.364 18.364Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
         </article>
       </section>
       <section class="sm-links">
-        <a href="#"
+        <a
+          href="mailto:kaspernikolajsendahl@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           ><svg
             class="svg"
             width="52"
@@ -307,7 +263,10 @@
             />
           </svg>
         </a>
-        <a href="#"
+        <a
+          href="https://github.com/kasp103y"
+          target="_blank"
+          rel="noopener noreferrer"
           ><svg
             class="svg"
             width="52"
@@ -323,7 +282,10 @@
             />
           </svg>
         </a>
-        <a href="#"
+        <a
+          href="https://www.linkedin.com/in/kaspernikolajsendahl-digitaldesign/"
+          target="_blank"
+          rel="noopener noreferrer"
           ><svg
             class="svg"
             width="52"
@@ -355,66 +317,565 @@
       </section>
     </header>
     <main>
+      <article id="center"><p id="projekt"></p></article>
       <section class="wrapper">
-        <section class="portfolio-section section right">
-          <h3>My projects <span id="projekt"></span></h3>
+        <section class="portfolio-section section" id="portfolio-section">
+          <h3 class="right">My portfolio</h3>
           <article class="projekter">
-            <a id="bogino" href="#"
-              ><img src="billeder/bogino-grid.jpg" alt="Bogino"
-            /></a>
-            <a id="cosmic" href="#"
-              ><img src="billeder/cosmic-font-grid.jpg" alt="Bogino"
-            /></a>
-            <a id="spil" href="#"
-              ><img src="billeder/spil.jpg" alt="Bogino"
-            /></a>
-            <a id="musik" href="#"
-              ><img src="billeder/musikloftet.jpg" alt="Bogino"
-            /></a>
-            <a id="ub" href="#"
-              ><img src="billeder/ungdomsby-midlertidig.jpg" alt="Bogino"
-            /></a>
+            <button class="link-prj" id="bogino" href="projekt.html">
+              <img src="../billeder/bogino-grid.jpg" alt="Bogino" />
+            </button>
+            <button class="link-prj" id="cosmic">
+              <img src="../billeder/cosmic-font-grid.jpg" alt="Cosmic font" />
+            </button>
+            <button class="link-prj" id="spil" href="projekt.html">
+              <img src="../billeder/spil.jpg" alt="Save thy flower" />
+            </button>
+            <button class="link-prj" id="musik" href="projekt.html">
+              <img src="../billeder/musikloftet.jpg" alt="Musikloftet" />
+            </button>
+            <!-- <button class="link-prj" id="ub" href="projekt.html">
+              <img
+                src="../billeder/ungdomsby-midlertidig.jpg"
+                alt="Ungdomsbyen"
+              />
+            </button> -->
 
-            <a id="grob" href="#"
-              ><img src="billeder/grob.jpg" alt="Bogino"
-            /></a>
+            <button class="link-prj" id="grob" href="projekt.html">
+              <img src="../billeder/grob.jpg" alt="Grob" />
+            </button>
           </article>
+          <!--------------------------Bogino modal------------------------>
+          <dialog class="modal" id="bogino-modal">
+            <div class="flex-btn">
+              <button class="close close-bogino right">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  width="35px"
+                  fill="#000000"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M13.89 8.7L12 10.59 10.11 8.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <article class="content-modal">
+              <h3>BOGINO</h3>
+
+              <article class="modal-top-text">
+                <article class="modal-left modal-text">
+                  <p class="p-lead">Bogino Redesign</p>
+                  <p class="modal-p">
+                    Gruppeprojektet var et redesign af tøjmærket Bogino. Dertil
+                    er der blevet bygget en webshop-prototype i Wordpress, lavet
+                    SoMe-materiale og en kampagne video der skulle fange
+                    essensen af Bogino
+                  </p>
+                  <a
+                    class="button modal-link"
+                    href="https://truttedyret.dk/kea/2_sem/bogino_eksamen/bogino_wp/"
+                    >SE SITE</a
+                  >
+                </article>
+                <article class="modal-left">
+                  <figure class="modal-img">
+                    <img src="../billeder/bogino/bogino-front.png" alt="" />
+                  </figure>
+                </article>
+              </article>
+              <article class="modal-top-text flex-right">
+                <article class="modal-text right">
+                  <p class="p-lead">Efterdesign</p>
+                  <p class="modal-p">
+                    Efter projektet blev afleveret til klienten, lavede jeg et
+                    redesign af vores oprindelige løsning som et led i mit
+                    eksamensprojekt. Prototypen blev lavet i XD og havde fokus
+                    på mobil-brugervenlighed
+                  </p>
+                  <a class="button modal-link variant-btn" href="#"
+                    >PROTOTYPE</a
+                  >
+                </article>
+                <article class="modal-left">
+                  <figure class="modal-img">
+                    <img src="../billeder/bogino/bogino-front.png" alt="" />
+                  </figure>
+                </article>
+              </article>
+
+              <article class="modal-text-wrapper tools">
+                <article class="modal-left modal-text">
+                  <p class="p-lead">Værktøjer</p>
+                  <ul class="modal-p tool">
+                    <li class="tool-item">Wordpress</li>
+
+                    <li class="tool-item">XD</li>
+
+                    <li class="tool-item">Photoshop</li>
+
+                    <li class="tool-item">Premier pro</li>
+
+                    <li class="tool-item">Rest API</li>
+                  </ul>
+                </article>
+              </article>
+
+              <article class="modal-video">
+                <p class="p-lead">Video annonce</p>
+                <figure class="iframe-container">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/uwpgY8Xdqjo"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </figure>
+              </article>
+            </article>
+          </dialog>
+
+          <!------------------------bogino modal slut---------------------------------->
+          <!--------------------------Cosmic modal------------------------>
+          <dialog class="modal" id="cosmic-modal">
+            <div class="flex-btn">
+              <button class="close close-cosmic right">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  width="35px"
+                  fill="#000000"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M13.89 8.7L12 10.59 10.11 8.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <article class="content-modal">
+              <h3>COSMIC FONT</h3>
+
+              <article class="modal-top-text">
+                <article class="modal-left modal-text">
+                  <p class="p-lead">Typografien</p>
+                  <p class="modal-p">
+                    Cosmic er mit første forsøg på at lave en display font. Den
+                    er inspireret af kaligrafi, cyperpunk og nordiske runer. Mit
+                    mål var at lave en font der skiller sig ud med et
+                    futuristisk udtryk.
+                  </p>
+                  <a
+                    class="button modal-link"
+                    href="https://truttedyret.dk/kea/2_sem/bogino_eksamen/bogino_wp/"
+                    >SE SITE</a
+                  >
+                </article>
+
+                <article class="modal-left">
+                  <figure class="modal-img">
+                    <img src="../billeder/cosmic-font-grid.jpg" alt="" />
+                  </figure>
+                </article>
+              </article>
+              <article class="modal-text-wrapper tools">
+                <article class="modal-left modal-text">
+                  <p class="p-lead">Værktøjer</p>
+                  <ul class="modal-p tool">
+                    <li class="tool-item">HTML</li>
+
+                    <li class="tool-item">CSS</li>
+
+                    <li class="tool-item">Illustrator</li>
+                    <li class="tool-item">Figma</li>
+                  </ul>
+                </article>
+              </article>
+              <article class="flex-right">
+                <article class="modal-left galleri">
+                  <figure class="img-grid">
+                    <img src="../billeder/cosmic/proces1.jpg" alt="" />
+                    <img src="../billeder/cosmic/proces2.jpg" alt="" />
+                    <img src="../billeder/cosmic/proces3.jpg" alt="" />
+                  </figure>
+                </article>
+              </article>
+            </article>
+          </dialog>
+
+          <!------------------------Cosmic modal slut---------------------------------->
+
+          <!--------------------------Spil modal------------------------>
+          <dialog class="modal" id="spil-modal">
+            <div class="flex-btn">
+              <button class="close close-spil right">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  width="35px"
+                  fill="#000000"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M13.89 8.7L12 10.59 10.11 8.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <article class="content-modal">
+              <h3>SAVE THY FLOWER</h3>
+
+              <article class="modal-top-text">
+                <article class="modal-left modal-text">
+                  <p class="p-lead">Spillet</p>
+                  <p class="modal-p">
+                    I spillet "SAVE THY FLOWER" skal man samle vand til en
+                    blomst i det varme australien før den tørrer ud og dør i det
+                    varme australske klima. Spillet er lavet i HTML, CSS og
+                    JavaScript.
+                  </p>
+                  <a
+                    class="button modal-link"
+                    href="https://truttedyret.dk/kea/2_sem/bogino_eksamen/bogino_wp/"
+                    >SPIL</a
+                  >
+                </article>
+                <article class="modal-left">
+                  <figure class="modal-img">
+                    <img src="../billeder/spil.jpg" alt="" />
+                  </figure>
+                </article>
+              </article>
+              <article class="modal-text-wrapper tools">
+                <article class="modal-left modal-text">
+                  <p class="p-lead">Værktøjer</p>
+                  <ul class="modal-p tool">
+                    <li class="tool-item">HTML</li>
+
+                    <li class="tool-item">CSS</li>
+
+                    <li class="tool-item">JavaScript</li>
+
+                    <li class="tool-item">Illustrator</li>
+                  </ul>
+                </article>
+              </article>
+              <article class="flex-right">
+                <article class="modal-left">
+                  <figure class="flex">
+                    <img src="../billeder/spil/blomst_01.jpg" alt="" />
+                    <img src="../billeder/spil/blomst_02_win.jpg" alt="" />
+                    <img src="../billeder/spil/blomst_03_rip.jpg" alt="" />
+                  </figure>
+                </article>
+              </article>
+            </article>
+          </dialog>
+
+          <!------------------------Spil modal slut---------------------------------->
+
+          <!--------------------------Musik modal------------------------>
+          <dialog class="modal" id="musik-modal">
+            <div class="flex-btn">
+              <button class="close close-musik right">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  width="35px"
+                  fill="#000000"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M13.89 8.7L12 10.59 10.11 8.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <article class="content-modal">
+              <h3>MUSIKLOFTET</h3>
+
+              <article class="modal-top-text">
+                <article class="modal-left modal-text">
+                  <p class="p-lead">Website</p>
+                  <p class="modal-p">
+                    Musikloftet er en fiktiv caseopgave for en
+                    musiklokaleudlejer. Casen har været en mulighed for mig at
+                    lære at bruge Tailwind CSS, som sitet er bygget med. På
+                    denne case blev der arbejdet med brugervenlighed, men der er
+                    givet plads til at lege med et anderledes design. Vi valgte
+                    at gøre brug af Metro/flatdesign, med en rig farvepallete.
+                  </p>
+                  <a
+                    class="button modal-link"
+                    href="https://truttedyret.dk/kea/2_sem/bogino_eksamen/bogino_wp/"
+                    >SE SITE</a
+                  >
+                </article>
+                <article class="modal-left">
+                  <figure class="modal-img">
+                    <img src="../billeder/musikloftet.jpg" alt="Musikloftet" />
+                  </figure>
+                </article>
+              </article>
+
+              <article class="modal-text-wrapper tools">
+                <article class="modal-left modal-text">
+                  <p class="p-lead">Værktøjer</p>
+                  <ul class="modal-p tool">
+                    <li class="tool-item">Tailwind CSS</li>
+
+                    <li class="tool-item">Figma</li>
+
+                    <li class="tool-item">Photoshop</li>
+
+                    <li class="tool-item">Illustrator</li>
+                  </ul>
+                </article>
+              </article>
+            </article>
+          </dialog>
+
+          <!------------------------Musik modal slut---------------------------------->
+
+          <!--------------------------Ungdomsbyen modal------------------------>
+          <dialog class="modal" id="ub-modal">
+            <div class="flex-btn">
+              <button class="close close-ub right">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  width="35px"
+                  fill="#000000"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M13.89 8.7L12 10.59 10.11 8.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <article class="content-modal">
+              <h3>COSMIC FONT</h3>
+
+              <article class="modal-top-text">
+                <article class="modal-left modal-text">
+                  <p class="p-lead">Cosmic</p>
+                  <p class="modal-p">
+                    Gruppeprojektet var et redesign af tøjmærket Bogino. Dertil
+                    er der blevet bygget en webshop-prototype i Wordpress, lavet
+                    SoMe-materiale og en kampagne video der skulle fange
+                    essensen af Bogino
+                  </p>
+                  <a
+                    class="button modal-link"
+                    href="https://truttedyret.dk/kea/2_sem/bogino_eksamen/bogino_wp/"
+                    >SE SITE</a
+                  >
+                </article>
+                <article class="modal-left">
+                  <figure class="modal-img">
+                    <img src="../billeder/cosmic-font-grid.jpg" alt="" />
+                  </figure>
+                </article>
+              </article>
+              <article class="modal-top-text flex-right">
+                <article class="modal-text right">
+                  <p class="p-lead">Efterdesign</p>
+                  <p class="modal-p">
+                    Efter projektet blev afleveret til klienten, lavede jeg et
+                    redesign af vores oprindelige løsning som et led i mit
+                    eksamensprojekt. Prototypen blev lavet i XD og havde fokus
+                    på mobil-brugervenlighed
+                  </p>
+                  <a class="button modal-link variant-btn" href="#"
+                    >SE PROTOTYPE</a
+                  >
+                </article>
+                <article class="modal-left">
+                  <figure class="modal-img">
+                    <img src="../billeder/cosmic-font-grid.jpg" alt="" />
+                  </figure>
+                </article>
+              </article>
+
+              <article class="modal-text-wrapper tools">
+                <article class="modal-left modal-text">
+                  <p class="p-lead">Værktøjer</p>
+                  <ul class="modal-p tool">
+                    <li class="tool-item">Wordpress</li>
+
+                    <li class="tool-item">XD</li>
+
+                    <li class="tool-item">Photoshop</li>
+
+                    <li class="tool-item">Premier pro</li>
+
+                    <li class="tool-item">Rest API</li>
+                  </ul>
+                </article>
+              </article>
+            </article>
+          </dialog>
+
+          <!------------------------UB modal slut---------------------------------->
+
+          <!--------------------------Grob modal------------------------>
+          <dialog class="modal" id="grob-modal">
+            <div class="flex-btn">
+              <button class="close close-grob right">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  width="35px"
+                  fill="#000000"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M13.89 8.7L12 10.59 10.11 8.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <article class="content-modal">
+              <h3>TEATER GROB</h3>
+
+              <article class="modal-top-text">
+                <article class="modal-left modal-text">
+                  <p class="p-lead">Det du går glip af</p>
+                  <p class="modal-p">
+                    Dette projekt er en caseopgave for Teater Grob på Nørrebro.
+                    Jeg og min gruppe fik til at opgave at sælge årskort til
+                    teatret med en videokampange. Til dette udarbejdede vi
+                    kampagnen "GROB, Det du går glip af". Kampagnen havde til
+                    formål at vise hvad befolkningen går glip af uden Grob.
+                    Projektet mundede ud i to kampange videoer, "Vaskeriet" og
+                    "Daten". Min rolle i projektet har været konceptudvikling,
+                    video og redigering.
+                  </p>
+                  <a
+                    class="button modal-link"
+                    href="https://truttedyret.dk/kea/2_sem/bogino_eksamen/bogino_wp/"
+                    >SE SITE</a
+                  >
+                </article>
+                <article class="modal-left">
+                  <figure class="modal-img">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="211.9"
+                      height="231.6"
+                      viewBox="0 0 2119.658 2316.082"
+                    >
+                      <path
+                        id="Path_74"
+                        data-name="Path 74"
+                        d="M1153.62,872.944c-498.512,39.919-365.186,549.588-365.186,549.588C336.354,1199.718,478.786,775.376,478.786,775.376,802.906-76.806,1483.832,555.939,1483.832,555.939l181.146-191.216C1459.771,161.868,1075.65,75.7,1069.922,74.431a1.321,1.321,0,0,0-.482-.061C324.474,14.551,184.152,757.105,184.152,757.105-.07,1518.593,885.158,1728.2,885.158,1728.2L990.685,1947.76l222.452-97.448-58.372-135.256c246.151-63.92,359.941-274.674,359.941-274.674C1732.455,911.9,1153.62,872.944,1153.62,872.944Zm106.432,461.729c-108.059,158.232-195.919,136.644-195.919,136.644-81.408-280.7,51.678-322.734,118.191-325.327,41.608-1.628,78.151,26.955,91.116,66.513,5.669,17.246,6.813,34.734,6.272,49.266C1278.988,1280.823,1276.455,1310.734,1260.052,1334.673Z"
+                        transform="matrix(0.921, -0.391, 0.391, 0.921, -174.012, 585.257)"
+                        fill="#000"
+                      />
+                    </svg>
+                  </figure>
+                </article>
+              </article>
+              <article class="modal-video">
+                <p class="p-lead">Vaskeriet</p>
+                <figure class="iframe-container">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/d2YyssqGI7w"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </figure>
+              </article>
+              <article class="modal-video">
+                <p class="p-lead">Tinderdaten</p>
+                <figure class="iframe-container">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/uwpgY8Xdqjo"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </figure>
+              </article>
+
+              <article class="modal-text-wrapper tools">
+                <article class="modal-left modal-text">
+                  <p class="p-lead">Værktøjer</p>
+                  <ul class="modal-p tool">
+                    <li class="tool-item">Wordpress</li>
+
+                    <li class="tool-item">XD</li>
+
+                    <li class="tool-item">Photoshop</li>
+
+                    <li class="tool-item">Premier pro</li>
+
+                    <li class="tool-item">Rest API</li>
+                  </ul>
+                </article>
+              </article>
+            </article>
+          </dialog>
+
+          <!------------------------Grob modal slut---------------------------------->
         </section>
         <section class="om section">
           <article>
-            <h3>A little about me...</h3>
-            <p class="p-lead">Kasper Nikolajsen Dahl</p>
+            <h3>About me</h3>
           </article>
           <article class="om-mig">
             <article>
+              <p class="p-lead">Kasper Nikolajsen Dahl, 22 years from Amager</p>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-                et maiores ex atque minima reprehenderit consectetur? Delectus
-                dignissimos exercitationem magni! In, reprehenderit esse aut
-                consequuntur earum veniam aperiam fugit nisi, vero iste
-                distinctio? Culpa, eos sapiente consectetur corrupti, aperiam
-                quidem accusamus nihil, veritatis quis nam libero dignissimos
-                porro ipsam deserunt!
+                I study Multimedia design at KEA. At KEA i have been working
+                with UI/UX-design and frontend. I love working in a creative and
+                challenging space. When im not working on designing websites, i
+                like to do CrossFit, winter bathing and playing music.
               </p>
-              <button class="desktop-btn">READ MORE</button>
+              <button class="desktop-btn button">READ MORE</button>
             </article>
 
-            <figure><img src="billeder/mig-wet.jpg" alt="" /></figure>
-            <button class="mobile-btn">READ MORE</button>
+            <figure><img src="../billeder/mig-wet.jpg" alt="" /></figure>
+            <a class="mobile-btn button">READ MORE</a>
           </article>
         </section>
         <section class="kontakt section right">
-          <h3>Leave a message at the end</h3>
-          <p class="p-lead">I am but a click away...</p>
+          <h3>MESSAGE ME</h3>
+          <p class="p-lead">I am but a few words away...</p>
           <form name="contact" method="POST" data-netlify="true">
-            <p class="form-p">Navn</p>
+            <p class="form-p">Name</p>
             <p>
               <label
                 ><input
                   class="label1"
                   type="text"
                   name="name"
-                  placeholder="Navn"
+                  placeholder="Your name"
               /></label>
             </p>
 
@@ -425,28 +886,58 @@
                   class="label2"
                   type="email"
                   name="email"
-                  placeholder="Email"
+                  placeholder="Your Email"
               /></label>
             </p>
-            <p class="form-p">Besked</p>
+            <p class="form-p">Message</p>
             <p>
               <label>
                 <textarea
                   class="label3"
                   id="besked"
                   name="message"
-                  placeholder="Besked"
+                  placeholder="Hopefully something nice... :)"
                 ></textarea>
               </label>
             </p>
             <p>
-              <button type="submit">SEND</button>
+              <button class="button" type="submit">SUBMIT</button>
             </p>
           </form>
         </section>
       </section>
     </main>
-    <footer></footer>
-    <script src="script.js"></script>
+    <footer>
+      <article>
+        <p class="p-lead">Kontakt</p>
+        <ul class="foot fleft">
+          <li>Kasper Nikolajsen Dahl</li>
+          <li>Mail: kaspernikolajsendahl@gmail.com</li>
+          <li>Tlf: 42 22 31 21</li>
+          <li>2300 København S</li>
+        </ul>
+      </article>
+      <article>
+        <p class="p-lead fcenter">Sitemap</p>
+        <ul class="foot fcenter">
+          <li><a href="forside.html">Forside</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="om.html">Om mig</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </article>
+      <article>
+        <p class="p-lead fright">Portfolio</p>
+        <ul class="foot fright">
+          <li><a href="#">Bogino Webshop</a></li>
+          <li><a href="#">Musikloftet</a></li>
+          <li><a href="#">Cosmic font</a></li>
+          <li><a href="#">Ungdomsbyen</a></li>
+          <li><a href="#">Teater Grob</a></li>
+          <li><a href="#">SAVE THY FLOWER</a></li>
+        </ul>
+      </article>
+    </footer>
+    <script src="../script.js"></script>
   </body>
 </html>

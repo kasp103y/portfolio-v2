@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
-    <title>KasperDesigns | Portfolio</title>
+    <title>Kasper Design | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/billeder/logo.svg" />
   </head>
   <body>
     <header>
@@ -62,45 +63,149 @@
             </svg>
           </a>
         </div>
+
         <div class="links">
-          <ul>
-            <li><a href="forside.html">FORSIDE</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="om.html">OM MIG</a></li>
-            <li><a href="kontakt.html">KONTAKT</a></li>
+          <ul
+            id="primary-navigation"
+            class="primary-navigation flex"
+            data-visible="false"
+          >
+            <li class="active"><a href="frontpage.html">HOME</a></li>
+            <li><a href="frontpage.html#portfolio-section">PORTFOLIO</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a id="sprog" href="../danish/forside.html">ENG/DAN</a></li>
           </ul>
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="sr-only">menu</span>
+          </button>
         </div>
       </nav>
     </header>
     <main>
       <article id="center"><p id="projekt"></p></article>
-      <section class="wrapper underside">
-        <section class="section">
-          <h3>Min portfolio</h3>
-          <article class="projekter">
-            <a id="bogino" href="#"
-              ><img src="../billeder/bogino-grid.jpg" alt="Bogino"
-            /></a>
-            <a id="cosmic" href="#"
-              ><img src="../billeder/cosmic-font-grid.jpg" alt="Bogino"
-            /></a>
-            <a id="spil" href="#"
-              ><img src="../billeder/spil.jpg" alt="Bogino"
-            /></a>
-            <a id="musik" href="#"
-              ><img src="../billeder/musikloftet.jpg" alt="Bogino"
-            /></a>
-            <a id="ub" href="#"
-              ><img src="../billeder/ungdomsby-midlertidig.jpg" alt="Bogino"
-            /></a>
-
-            <a id="grob" href="#"
-              ><img src="../billeder/grob.jpg" alt="Bogino"
-            /></a>
+      <section class="wrapper">
+        <section class="kontakt-page section">
+          <article class="find-mig">
+            <h3>KONTAKT</h3>
+            <address>
+              <ul>
+                <li>Kasper Nikolajsen Dahl</li>
+                <li>
+                  <a href="mailto:kaspernikolajsendahl@gmail.com"
+                    >Mail: kaspernikolajsendahl@gmail.com</a
+                  >
+                </li>
+                <li><a href="tel:+4542223121">Tlf: (45) 42 22 31 21</a></li>
+              </ul>
+            </address>
+            <p class="p-lead">Addresse</p>
+            <address>
+              <ul>
+                <li>2300 København S</li>
+                <li>Strandlodsvej 11N</li>
+              </ul>
+            </address>
           </article>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20801.33819010709!2d12.621989868263704!3d55.66220916374252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653acb6668e7d01%3A0x302685d2594f70f3!2sStrandlodsvej%2C%202300%20K%C3%B8benhavn!5e0!3m2!1sda!2sdk!4v1650188606572!5m2!1sda!2sdk"
+            width="100%"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+        <section class="kontakt section right">
+          <h3>Lad os tage en snak</h3>
+          <p class="p-lead">Jeg er blot en besked væk</p>
+          <form name="contact" method="POST" data-netlify="true">
+            <p class="form-p">Navn</p>
+            <p>
+              <label
+                ><input
+                  class="label1"
+                  type="text"
+                  name="name"
+                  placeholder="Navn"
+              /></label>
+            </p>
+
+            <p class="form-p">Email</p>
+            <p>
+              <label
+                ><input
+                  class="label2"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+              /></label>
+            </p>
+            <p class="form-p">Besked</p>
+            <p>
+              <label>
+                <textarea
+                  class="label3"
+                  id="besked"
+                  name="message"
+                  placeholder="Besked"
+                ></textarea>
+              </label>
+            </p>
+            <p>
+              <button class="button" type="submit">SEND</button>
+            </p>
+          </form>
         </section>
       </section>
     </main>
+    <footer>
+      <article>
+        <p class="p-lead">KONTAKT</p>
+        <address>
+          <ul class="foot">
+            <li>Kasper Nikolajsen Dahl</li>
+            <li>
+              <a href="mailto:kaspernikolajsendahl@gmail.com"
+                >Mail: kaspernikolajsendahl@gmail.com</a
+              >
+            </li>
+            <li><a href="tel:+4542223121">Tlf: (45) 42 22 31 21</a></li>
+          </ul>
+        </address>
+
+        <address>
+          <ul class="foot">
+            <li>2300 København S</li>
+            <li>Strandlodsvej 11N</li>
+          </ul>
+        </address>
+      </article>
+      <article>
+        <p class="p-lead fcenter">Sitemap</p>
+        <ul class="foot fcenter">
+          <li><a href="forside.html">Forside</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="om.html">Om mig</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </article>
+      <article>
+        <p class="p-lead fright">Portfolio</p>
+        <ul class="foot fright">
+          <li><a href="#">Bogino Webshop</a></li>
+          <li><a href="#">Musikloftet</a></li>
+          <li><a href="#">Cosmic font</a></li>
+          <li><a href="#">Ungdomsbyen</a></li>
+          <li><a href="#">Teater Grob</a></li>
+          <li><a href="#">SAVE THY FLOWER</a></li>
+        </ul>
+      </article>
+    </footer>
     <script src="../script.js"></script>
   </body>
 </html>
