@@ -1,10 +1,8 @@
-@font-face {
+/* @font-face {
   font-family: "inter";
   src: url("font/inter-variablefont_slntwght-webfont.woff2") format("woff2"),
     url("font/inter-variablefont_slntwght-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+} */
 
 :root {
   /*Headings*/
@@ -17,11 +15,11 @@
   --font-size-xxl: clamp(1.6rem, 3.9vw + 0.63rem, 3.75rem);
   --font-size-xxxl: clamp(1.8rem, 5.81vw + 0.35rem, 5rem);
   /*font-weight*/
-  --heavy: 800;
-  --xmedium: 600;
-  --medium: 550;
+  --heavy: 700;
+
+  --medium: 500;
   --regular: 400;
-  --light: 300;
+
   /*Color*/
   --purple: #e682eb;
   --green: #8ae76d;
@@ -67,7 +65,7 @@
 }
 
 html {
-  font-family: "inter", sans-serif;
+  font-family: "roboto", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -101,7 +99,7 @@ main {
 
 .heading-lead {
   font-size: var(--font-size-md);
-  font-weight: var(--xmedium);
+  font-weight: var(--medium);
   text-shadow: none;
   color: var(--font);
 }
@@ -126,8 +124,6 @@ h1,
   /* text-shadow: var(--text-outline); */
   -webkit-text-stroke: 2px black;
   line-height: 112%;
-
-  letter-spacing: 20%;
 }
 #index-head {
   color: var(--purple);
@@ -144,11 +140,11 @@ h3 {
 
 .p-lead {
   font-size: var(--font-size-base);
-  font-weight: var(--xmedium);
+  font-weight: var(--medium);
 }
 
 .heading-lead {
-  font-weight: var(--xmedium);
+  font-weight: var(--medium);
   margin-bottom: 0;
 }
 p {
@@ -290,7 +286,7 @@ address {
 }
 
 nav ul li a {
-  font-weight: var(--xmedium);
+  font-weight: var(--medium);
   font-size: var(--font-size-sm);
   transition: var(--easing);
   padding: var(--spacing-1) var(--spacing-2);
@@ -366,6 +362,10 @@ nav ul li a:hover {
   justify-self: center;
 } */
 
+button {
+  font-weight: var(--medium);
+}
+
 .button {
   margin: var(--spacing-4) 0;
   font-size: var(--font-size-base);
@@ -382,7 +382,10 @@ nav ul li a:hover {
   /* justify-self: center; */
   box-shadow: 0 8px 0 var(--font);
 }
-
+#submit {
+  font-weight: var(--medium);
+  font-family: "roboto", sans-serif;
+}
 /* .variant-btn {
   background-image: var(--gradient-hover);
 } */
@@ -627,7 +630,8 @@ dialog::backdrop {
   position: fixed;
   box-shadow: none;
   padding: 0;
-  margin: -0.5 -0.3rem;
+  z-index: 9999;
+  right: 12%;
   /*   top: 3%;
   left: 77%; */
 }
